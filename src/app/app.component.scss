@@ -1,0 +1,13 @@
+a {
+  display: inline-block;
+  padding: 4px 12px;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  margin-left: 12px;
+  border-radius: 4px;
+
+  &.active {
+    background-color: green;
+  }
+}

@@ -1,0 +1,17 @@
+Using in ngOnInit
+<ul>
+  <li>setter/getter:{{ titleA }}</li>
+  <li>async: {{ titleB | async }}</li>
+</ul>
+
+<br />
+For - getter/setter
+<ul class="for">
+  <li *ngFor="let itemA of itemsA">{{ itemA }}</li>
+</ul>
+
+<br />
+For - Async
+<ul class="for">
+  <li *ngFor="let itemB of itemsB | async">{{ itemB }}</li>
+</ul>
