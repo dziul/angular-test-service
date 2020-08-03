@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ContentLayoutComponent } from './core/layouts/content-layout/content-layout.component';
+import { HomeComponent } from './modules/home/home.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,14 @@ const routes: Routes = [
           import('./modules/strawberry/strawberry.module').then((m) => m.StrawberryModule),
       },
     ],
+  },
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
   },
 ];
 
